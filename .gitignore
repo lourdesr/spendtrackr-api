@@ -2,6 +2,10 @@ node_modules/
 node_modules/**
 node_modules/**/*
 
+postgres-data/
+postgres-data/**
+postgres-data/**/*
+
 .env
 
 .DS_Store

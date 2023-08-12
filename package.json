@@ -1,0 +1,16 @@
+{
+  "name": "spendtrackr-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backing-database:start": "docker-compose -f docker-compose.local.yml up database -d"
+  },
+  "author": "Lourdes Roashan",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.18.2",
+    "knex": "^2.5.1"
+  }
+}
