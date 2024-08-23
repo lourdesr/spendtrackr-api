@@ -10,6 +10,7 @@
   "author": "Lourdes Roashan",
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "knex": "^2.5.1",
     "pg": "^8.12.0"
