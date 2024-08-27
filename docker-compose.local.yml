@@ -1,11 +1,12 @@
 version: "3.8"
 services:
-  database:
+  spendtrackr_database:
     image: postgres:15.3-alpine3.18
     restart: always
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=spendtrackr
     ports:
       - "5432:5432"
     volumes:

@@ -2,16 +2,32 @@
   "name": "spendtrackr-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "backing-database:start": "docker-compose -f docker-compose.local.yml up database -d"
+    "lint": "./node_modules/.bin/eslint",
+    "start": "nodemon src/bootstrap.js",
+    "backing-database:start": "docker-compose -f docker-compose.local.yml up -d spendtrackr_database"
   },
   "author": "Lourdes Roashan",
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "knex": "^2.5.1",
+    "nodemon": "^3.1.4",
     "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3"
   }
 }
